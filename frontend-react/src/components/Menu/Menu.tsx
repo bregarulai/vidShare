@@ -24,6 +24,7 @@ import {
   Item,
   Hr,
   Login,
+  Title,
   Button,
 } from './menuStyles';
 import logo from '../../img/logo.png';
@@ -69,7 +70,7 @@ const Menu = ({ setDarkMode, darkMode }: IMenuProp) => {
           </Button>
         </Login>
         <Hr />
-        {/* <Title>BEST OF LAMATUBE</Title> */}
+        <Title>BEST OF VIDSHARE</Title>
         <Item>
           <LibraryMusicOutlinedIcon />
           Music

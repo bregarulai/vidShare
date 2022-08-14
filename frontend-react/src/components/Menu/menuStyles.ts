@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     flex: 1;
-    background-color:${({theme} ) => theme.bg};
+    background-color:${({theme} ) => theme.bgLighter};
     color:${({theme} ) => theme.text};
     height: 100vh;
     font-size: 14px;
@@ -32,15 +32,6 @@ export const Item = styled.div`
     cursor: pointer;
     padding: 7.5px 0px;
 `
-
-export const Hr = styled.hr`
-    margin: 15px 0px;
-    border: 0.5px solid ${({theme}) => theme.soft};
-`
-
-export const Login = styled.div`
-
-`
 export const Button = styled.button`
     display: flex;
     align-items: center;
@@ -54,4 +45,19 @@ export const Button = styled.button`
     font-weight: 500;
     margin-top: 10px;
     cursor: pointer;
+`
+export const Hr = styled.hr`
+    margin: 15px 0px;
+    border: 0.5px solid ${({theme}) => theme.soft};
+`
+
+export const Login = styled.div`
+
+`
+
+export const Title = styled.h2`
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaaaaa;
+    margin-bottom: 20px;
 `
