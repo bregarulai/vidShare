@@ -21,3 +21,9 @@ export const Logo = styled.div`
 export const Image = styled.img`
     height: 25px;
 `
+export const Item = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+`
