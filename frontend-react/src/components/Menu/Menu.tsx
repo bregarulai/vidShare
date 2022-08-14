@@ -16,10 +16,23 @@ import FlagOutlinedIcon from '@mui/icons-material/FlagOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import SettingsBrightnessOutlinedIcon from '@mui/icons-material/SettingsBrightnessOutlined';
 
-import { Container, Logo, Wrapper, Image, Item } from './menuStyles';
+import {
+  Container,
+  Logo,
+  Wrapper,
+  Image,
+  Item,
+  Hr,
+  Login,
+  Button,
+} from './menuStyles';
 import logo from '../../img/logo.png';
 
-const Menu = () => {
+interface IMenuProp {
+  setDarkMode: Function;
+  darkMode: boolean;
+}
+const Menu = ({ setDarkMode, darkMode }: IMenuProp) => {
   return (
     <Container>
       <Wrapper>
@@ -39,7 +52,7 @@ const Menu = () => {
           <SubscriptionsOutlinedIcon />
           Subscriptions
         </Item>
-        {/* <Hr /> */}
+        <Hr />
         <Item>
           <VideoLibraryOutlinedIcon />
           Library
@@ -48,9 +61,14 @@ const Menu = () => {
           <HistoryOutlinedIcon />
           History
         </Item>
-        {/* <Hr /> */}
-
-        {/* <Hr /> */}
+        <Hr />
+        <Login>
+          Sign in to like videos, comment, and subscribe.
+          <Button>
+            <AccountCircleOutlinedIcon /> Sign in
+          </Button>
+        </Login>
+        <Hr />
         {/* <Title>BEST OF LAMATUBE</Title> */}
         <Item>
           <LibraryMusicOutlinedIcon />
@@ -76,7 +94,7 @@ const Menu = () => {
           <LiveTvOutlinedIcon />
           Live
         </Item>
-        {/* <Hr /> */}
+        <Hr />
         <Item>
           <SettingsOutlinedIcon />
           Settings
@@ -89,9 +107,9 @@ const Menu = () => {
           <HelpOutlineOutlinedIcon />
           Help
         </Item>
-        <Item>
+        <Item onClick={() => setDarkMode(!darkMode)}>
           <SettingsBrightnessOutlinedIcon />
-          Dark Mode
+          {darkMode ? 'Light' : 'Dark'} Mode
         </Item>
       </Wrapper>
     </Container>

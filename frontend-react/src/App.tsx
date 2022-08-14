@@ -1,6 +1,7 @@
-import styled from '@emotion/styled';
-import React from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import React, { useState } from 'react';
 import { Menu, Navbar } from './components';
+import { darkTheme, lightTheme } from './utils/Theme';
 
 const Container = styled.div`
   display: flex;
@@ -12,14 +13,17 @@ const Main = styled.div`
 const Wrapper = styled.div``;
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
   return (
-    <Container>
-      <Menu />
-      <Main>
-        <Navbar />
-        <Wrapper>Video Cards</Wrapper>
-      </Main>
-    </Container>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Container>
+        <Menu setDarkMode={setDarkMode} darkMode={darkMode} />
+        <Main>
+          <Navbar />
+          <Wrapper>Video Cards</Wrapper>
+        </Main>
+      </Container>
+    </ThemeProvider>
   );
 }
 
