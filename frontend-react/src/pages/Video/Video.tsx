@@ -7,15 +7,24 @@ import AddTaskOutlinedIcon from '@mui/icons-material/AddTaskOutlined';
 import {
   Button,
   Buttons,
+  Channel,
+  ChannelCounter,
+  ChannelDescription,
+  ChannelDetail,
+  ChannelInfo,
+  ChannelName,
   Container,
   Content,
   Details,
   Hr,
+  Image,
   Info,
   Recommendation,
+  Subscribe,
   Title,
   VideoWrapper,
 } from './videoStyles';
+import channelLogo from '../../img/logo1.png';
 
 const Video = () => {
   return (
@@ -51,6 +60,22 @@ const Video = () => {
           </Buttons>
         </Details>
         <Hr />
+        <Channel>
+          <ChannelInfo>
+            <Image src={channelLogo} alt='logo' />
+            <ChannelDetail>
+              <ChannelName>Bregacode</ChannelName>
+              <ChannelCounter>200k subscribers</ChannelCounter>
+              <ChannelDescription>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloribus laborum delectus unde quaerat dolore culpa sit aliquam
+                at. Vitae facere ipsum totam ratione exercitationem. Suscipit
+                animi accusantium dolores ipsam ut.
+              </ChannelDescription>
+            </ChannelDetail>
+          </ChannelInfo>
+          <Subscribe>Subscribe</Subscribe>
+        </Channel>
       </Content>
       <Recommendation>Recommendation</Recommendation>
     </Container>

@@ -24,6 +24,7 @@ export const ChannelImage = styled.img`
     height: 36px;
     border-radius: 50%;
     background-color: #999999;
+    object-fit: cover;
 `
 
 export const Texts = styled.div`
