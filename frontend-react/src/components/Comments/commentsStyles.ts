@@ -13,7 +13,8 @@ export const Avatar = styled.img`
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
-    background-color: #999999;`
+    background-color: #999999;
+`
 
 export const Input = styled.input`
     outline: none;
