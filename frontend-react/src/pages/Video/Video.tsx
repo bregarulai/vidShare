@@ -25,6 +25,7 @@ import {
   VideoWrapper,
 } from './videoStyles';
 import channelLogo from '../../img/logo1.png';
+import { Comments } from '../../components';
 
 const Video = () => {
   return (
@@ -76,6 +77,8 @@ const Video = () => {
           </ChannelInfo>
           <Subscribe>Subscribe</Subscribe>
         </Channel>
+        <Hr />
+        <Comments />
       </Content>
       <Recommendation>Recommendation</Recommendation>
     </Container>
