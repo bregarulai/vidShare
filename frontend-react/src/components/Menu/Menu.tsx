@@ -28,6 +28,7 @@ import {
   Button,
 } from './menuStyles';
 import logo from '../../img/logo.png';
+import { Link } from 'react-router-dom';
 
 interface IMenuProp {
   setDarkMode: Function;
@@ -37,10 +38,12 @@ const Menu = ({ setDarkMode, darkMode }: IMenuProp) => {
   return (
     <Container>
       <Wrapper>
-        <Logo>
-          <Image src={logo} alt='logo' />
-          VidShare
-        </Logo>
+        <Link to='/'>
+          <Logo>
+            <Image src={logo} alt='logo' />
+            VidShare
+          </Logo>
+        </Link>
         <Item>
           <HomeIcon />
           Home
