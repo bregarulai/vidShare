@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { Menu, Navbar } from './components';
 import { darkTheme, lightTheme } from './utils/Theme';
-import { Home, Video } from './pages';
+import { Home, Signin, Video } from './pages';
 
 const Container = styled.div`
   display: flex;
@@ -32,6 +32,7 @@ function App() {
               <Routes>
                 <Route path='/'>
                   <Route index element={<Home />} />
+                  <Route path='signin' element={<Signin />} />
                   <Route path='video'>
                     <Route path=':id' element={<Video />} />
                   </Route>

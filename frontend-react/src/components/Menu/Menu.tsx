@@ -68,9 +68,11 @@ const Menu = ({ setDarkMode, darkMode }: IMenuProp) => {
         <Hr />
         <Login>
           Sign in to like videos, comment, and subscribe.
-          <Button>
-            <AccountCircleOutlinedIcon /> Sign in
-          </Button>
+          <Link to='signin'>
+            <Button>
+              <AccountCircleOutlinedIcon /> Sign in
+            </Button>
+          </Link>
         </Login>
         <Hr />
         <Title>BEST OF VIDSHARE</Title>
