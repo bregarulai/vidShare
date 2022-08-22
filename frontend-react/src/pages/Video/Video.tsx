@@ -25,7 +25,7 @@ import {
   VideoWrapper,
 } from './videoStyles';
 import channelLogo from '../../img/logo1.png';
-import { Comments } from '../../components';
+import { Card, Comments } from '../../components';
 
 const Video = () => {
   return (
@@ -80,7 +80,24 @@ const Video = () => {
         <Hr />
         <Comments />
       </Content>
-      <Recommendation>Recommendation</Recommendation>
+      <Recommendation>
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+        <Card type='sm' />
+      </Recommendation>
     </Container>
   );
 };
