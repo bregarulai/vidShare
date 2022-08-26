@@ -12,6 +12,7 @@ interface IVideo extends Document {
   dislikes?: [String];
   createdAt: Date;
   updatedAt: Date;
+  _doc: any;
 }
 
 const VideoSchema = new mongoose.Schema<IVideo>(

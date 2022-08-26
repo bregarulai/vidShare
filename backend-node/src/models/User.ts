@@ -9,6 +9,7 @@ interface IUser extends Document {
   subscribedUsers?: [String];
   createdAt: Date;
   updatedAt: Date;
+  _doc: any;
 }
 
 const UserSchema = new mongoose.Schema<IUser>(

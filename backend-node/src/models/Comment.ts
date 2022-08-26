@@ -4,9 +4,9 @@ interface IComment extends Document {
   userId: string;
   videoId: string;
   description: string;
-
   createdAt: Date;
   updatedAt: Date;
+  _doc: any;
 }
 
 const CommentSchema = new mongoose.Schema<IComment>(
